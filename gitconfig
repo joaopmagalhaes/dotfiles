@@ -1,0 +1,27 @@
+er]
+    name = João Magalhães
+    email = joao.magalhes.ext@holidaycheck.com
+
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore
+    pager = less -r
+
+[color]
+    ui = auto
+    interactive = auto
+
+[color "branch"]
+    current = green reverse
+    local = green
+    remote = red
+
+[branch]
+    autosetuprebase = always
+
+[merge]
+    tool = webstorm
+
+[push]
+    default = simple
+
