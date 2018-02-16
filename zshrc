@@ -84,14 +84,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias hcforum="cd /home/joao/Dev/holidaycheck-forum"
-alias zshconfig="subl ~/.zshrc"
-alias hcforumup="cd /home/joao/Dev/holidaycheck-forum/hc-forum && ./nodebb dev"
-alias hcforumtestsup="cd /home/joao/Dev/holidaycheck-forum/hc-forum && respectDomain=true VO_TESTS=true ./nodebb dev"
-alias buildSass="cd /home/joao/Dev/holidaycheck-forum && node modules/themes/nodebb-theme-holidaycheck-1-0-0/buildCss.js && cd hc-forum/ && grunt"
-alias sauceconnect="cd /home/joao/sauceconnect/bin && ./sc -u hc-team-forum -k 88fd886b-2475-4058-8ef1-988baa32d845"
-alias redisup="redis-server --port 6379 --dir /home/joao/Dev/holidaycheck-forum/test/dumps/ --dbfilename dump.rdb --appendonly no"
-alias redisclusterup="cd ~/redis-3.0.7/utils/create-cluster && ./create-cluster start"
-alias redisclusterdown="cd ~/redis-3.0.7/utils/create-cluster && ./create-cluster stop"
+alias zshconfig="vi ~/.zshrc"
+alias mood="cd /home/joao/Dev/kununu-mood"
+alias moodup="mood && mood-docker && docker-compose up --build"
+alias moodgetall="mood && mood-api && gcd && gl && .. && mood-proxy && gcd && gl && .. && mood-app"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

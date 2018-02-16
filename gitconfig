@@ -1,27 +1,14 @@
-er]
-    name = João Magalhães
-    email = joao.magalhes.ext@holidaycheck.com
-
-[core]
-    editor = vim
-    excludesfile = ~/.gitignore
-    pager = less -r
-
-[color]
-    ui = auto
-    interactive = auto
-
-[color "branch"]
-    current = green reverse
-    local = green
-    remote = red
-
-[branch]
-    autosetuprebase = always
-
-[merge]
-    tool = webstorm
-
+[user]
+    email = jmagalhaes-xing@xing.com
 [push]
     default = simple
 
+[merge]
+    tool = webstorm
+[mergetool "webstorm"]
+    cmd = /opt/WebStorm/bin/webstorm.sh merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
+        trustExitCode = true
+[diff]
+    tool = webstorm
+[difftool "webstorm"]
+    cmd = /opt/WebStorm/bin/webstorm.sh diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")

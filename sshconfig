@@ -1,0 +1,11 @@
+# PERSONAL
+Host github.com-joaopmagalhaes
+	HostName github.com
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/id_rsa_joaopmagalhaes
+
+# XING
+Host github.com-jmagalhaes-xing
+	HostName github.com
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/id_rsa_xing

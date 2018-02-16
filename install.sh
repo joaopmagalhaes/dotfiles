@@ -1,4 +1,6 @@
-SE DEPENDENCIES
+#!/bin/sh
+
+## BASE DEPENDENCIES
 # Install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 
@@ -55,6 +57,9 @@ sudo apt install sublime-text
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 chsh -s /bin/zsh
 
+# Install Powerline fonts
+sudo apt install fonts-powerline
+
 ## DEVELOPMENT DEPENDENCIES
 # Create development, dotfiles and vimfiles dirs
 mkdir -p ~/Dev
@@ -67,3 +72,4 @@ git clone https://github.com/joaopmagalhaes/dotfiles.git ~/Dev/dotfiles
 ln -s ~/Dev/dotfiles/zshrc ~/.zshrc
 ln -s ~/Dev/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/Dev/dotfiles/gitignore ~/.gitignore
+ln -s ~/Dev/dotfiles/sshconfig ~/.ssh/config
