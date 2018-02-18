@@ -7,8 +7,8 @@ cd ~/Downloads
 # Install homebrew
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 
-# Install build essential
-sudo apt install build-essential
+# Install essentials
+sudo apt install build-essential curl file git python-setuptools --assume-yes
 
 # Add paths
 echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' >>~/.zprofile
@@ -38,13 +38,13 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt update
 
 # Install Google Chrome
-sudo apt install google-chrome-stable
+sudo apt install google-chrome-stable --assume-yes
 
 # Install GIMP
-sudo apt install gimp
+sudo apt install gimp --assume-yes
 
 # Install Terminator
-sudo apt install terminator
+sudo apt install terminator --assume-yes
 
 # Install Slack
 wget https://downloads.slack-edge.com/linux_releases/slack-desktop-3.0.5-amd64.deb
@@ -59,17 +59,20 @@ wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.15/franz_5
 sudo dpkg franz_5.0.0-beta.15_amd64.deb
 
 # Install MySQL Workbench
-sudo apt install mysql-workbench
+sudo apt install mysql-workbench --assume-yes
 
 # Install Sublime Text 3
-sudo apt install sublime-text
+sudo apt install sublime-text --assume-yes
+
+# Install Zsh
+sudo apt install zsh --assume-yes
 
 # Install oh-my-zshell
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 chsh -s /bin/zsh
 
 # Install Powerline fonts
-sudo apt install fonts-powerline
+sudo apt install fonts-powerline --assume-yes
 
 ## DEVELOPMENT DEPENDENCIES
 # Create development, dotfiles and vimfiles dirs
