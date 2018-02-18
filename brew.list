@@ -1,5 +1,6 @@
 awk
 cmake
+gcc
 git
 htop
 iftop

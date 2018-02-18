@@ -1,13 +1,24 @@
 #!/bin/sh
 
+# Move to downloads
+cd ~/Downloads
+
 ## BASE DEPENDENCIES
 # Install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+
+# Install build essential
+sudo apt install build-essential
+
+# Add paths
+echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' >>~/.zprofile
+echo 'export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"' >>~/.zprofile
+echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/.zprofile
+PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 # Install brew dependencies
+wget https://raw.githubusercontent.com/joaopmagalhaes/dotfiles/master/brew.list
 cat brew.list | xargs brew install
-
-cd ~/Downloads
 
 # Add Google Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -

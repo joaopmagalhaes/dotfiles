@@ -2,11 +2,7 @@
 
 ## How to install
 
-First install ruby
-
-`sudo apt install ruby`
-
-Then, run the `install.sh` on your terminal
+Run the `install.sh` on your terminal:
 
 `curl -L https://raw.githubusercontent.com/joaopmagalhaes/dotfiles/master/install.sh | sh`
 
