@@ -2,7 +2,11 @@
 
 ## How to install
 
-Run the `install.sh` on your terminal:
+Install `curl`:
+
+`sudo apt install curl`
+
+Then, run the `install.sh` on your terminal:
 
 `curl -L https://raw.githubusercontent.com/joaopmagalhaes/dotfiles/master/install.sh | sh`
 
