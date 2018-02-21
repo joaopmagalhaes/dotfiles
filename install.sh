@@ -21,11 +21,11 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt update
 
 ## Install all packages
-cat apt.list | xargs sudo apt install --assume-yes
+sudo apt install build-essential curl gimp google-chrome-stable file fonts-powerline git htop iftop mysql-workbench npm python-setuptools sublime-text terminator unrar zsh --assume-yes
 
 # Install Slack
 wget https://downloads.slack-edge.com/linux_releases/slack-desktop-3.0.5-amd64.deb
-sudo dpkg slack-desktop-3.0.5-amd64.deb
+sudo dpkg -i slack-desktop-3.0.5-amd64.deb
 
 # Install WebStorm
 wget https://download.jetbrains.com/webstorm/WebStorm-2017.3.4.tar.gz
@@ -33,7 +33,7 @@ sudo tar xfz WebStorm-2017.3.4.tar.gz -C /opt/
 
 # Install Franz
 wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.15/franz_5.0.0-beta.15_amd64.deb
-sudo dpkg franz_5.0.0-beta.15_amd64.deb
+sudo dpkg -i franz_5.0.0-beta.15_amd64.deb
 
 # Install oh-my-zshell
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
