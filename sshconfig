@@ -1,20 +1,20 @@
 # PERSONAL
-Host github.com-joaopmagalhaes
+Host git-joaopmagalhaes github.com
 	HostName github.com
-	User joaopmagalhaes
+	User git
 	PreferredAuthentications publickey
 	IdentityFile ~/.ssh/id_rsa_joaopmagalhaes
 
 # XING
 Host source.xing.com-joao-magalhaes
 	HostName source.xing.com
-	User joao-magalhaes
+	User git
 	PreferredAuthentications publickey
 	IdentityFile ~/.ssh/id_rsa_joao-magalhaes
 
 # KUNUNU
-Host github.com-jmagalhaes-xing
+Host github.com
 	HostName github.com
-	User jmagalhaes-xing
+	User git
 	PreferredAuthentications publickey
-	IdentityFile ~/.ssh/id_rsa_jmagalhaes-xing
+	IdentityFile ~/.ssh/id_rsa_jmagalhaes-kununu
