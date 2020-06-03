@@ -84,9 +84,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias zshconfig="vi ~/.zshrc"
-alias mood="cd /home/joao/Dev/kununu-mood"
-alias moodup="mood && mood-docker && docker-compose up --build"
-alias moodgetall="mood && mood-api && gcd && gl && .. && mood-proxy && gcd && gl && .. && mood-app"
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+alias zshconfig="nano ~/.zshrc"
+alias kcore="cd /home/joao/kununu/core"
+
+klogin() {
+  kununu sts -l "$1"
+  cd "/home/joao/kununu/core/devops/k8s"
+  ./bin/ecr-login.sh
+  kcore
+}

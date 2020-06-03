@@ -3,13 +3,3 @@
 	name = João Magalhães
 [push]
 	default = simple
-
-[merge]
-	tool = webstorm
-[mergetool "webstorm"]
-	cmd = /home/joao/WebStorm/bin/webstorm.sh merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
-        trustExitCode = true
-[diff]
-	tool = webstorm
-[difftool "webstorm"]
-	cmd = /home/joao/WebStorm/bin/webstorm.sh diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")

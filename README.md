@@ -12,8 +12,8 @@ Then, run the `install.sh` on your terminal:
 
 Finally, run:
 
-`chsh -s /bin/zsh` <-- couldn't find a way to add this to the script
+`chsh -s /bin/zsh` (couldn't find a way to add this to the script)
 
-Don't forget to generate SSH keys for GitHub
+Don't forget to generate SSH keys for GitHub, download VPN profile and Chrome certificates
 
 `ssh-keygen -t rsa -C "your_email@youremail.com"`
