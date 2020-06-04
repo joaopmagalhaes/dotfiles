@@ -18,7 +18,7 @@ echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sourc
 sudo apt update
 
 ## Install all packages
-sudo apt install build-essential slack openvpn snapd network-manager-openvpn spotify-client code network-manager-openvpn-gnome gconf2 gimp google-chrome-stable file fonts-powerline git htop iftop mysql-workbench npm python-setuptools terminator unrar zsh parcellite --assume-yes
+sudo apt install build-essential slack openvpn snapd network-manager-openvpn jq spotify-client code network-manager-openvpn-gnome gconf2 gimp google-chrome-stable file fonts-powerline git htop iftop mysql-workbench npm python-setuptools terminator unrar zsh parcellite --assume-yes
 
 # Install deb dependencies
 sudo apt install -f --assume-yes
