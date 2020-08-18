@@ -43,3 +43,4 @@ rm -f ~/.zshrc
 ln -s ~/kununu/dotfiles/zshrc ~/.zshrc
 ln -s ~/kununu/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/kununu/dotfiles/gitignore ~/.gitignore
+ln -s ~/kununu/dotfiles/update_repos.sh ~/kununu/core/.update_repos.sh
