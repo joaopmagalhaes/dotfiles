@@ -1,0 +1,1 @@
+/home/joao/kununu/core/update_repos.sh
