@@ -88,8 +88,16 @@ alias zshconfig="nano ~/.zshrc"
 alias kcore="cd /home/joao/kununu/core"
 
 klogin() {
+  kununu sts -l "$1"
+  cd "/home/joao/kununu/core/devops/k8s"
+  ./bin/ecr-login.sh
+  kcore
+}
+
+klogintl() {
   kununu sts -r TeamLeaders -o "$1"
   cd "/home/joao/kununu/core/devops/k8s"
   ./bin/ecr-login.sh
   kcore
 }
+
